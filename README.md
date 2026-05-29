@@ -1,6 +1,14 @@
-# Employee Poll - Ant Design
+# Employee Polls
 
-A Vite + React employee poll app inspired by `ernysans/employee-pool`, rebuilt with Ant Design instead of Material Design.
+An interactive polling application that allows employees to create, answer, and view poll results in real-time. Built with Vite and React for a fast, modern user experience.
+
+## About
+
+This project is a web-based employee polling system where users can:
+- Create polls with multiple questions and answer options
+- Vote on existing polls
+- View live polling results and statistics
+- Track poll participation and engagement across the organization
 
 ## Run
 
