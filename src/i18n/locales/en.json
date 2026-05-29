@@ -30,5 +30,10 @@
     "title": "Dashboard",
     "answered": "Answered Questions",
     "unanswered": "Unanswered Questions"
+  },
+
+    "questions": {
+    "answered": " Answered",
+    "unanswered": "Unanswered"
   }
 }

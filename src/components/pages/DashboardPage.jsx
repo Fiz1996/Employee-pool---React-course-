@@ -1,18 +1,45 @@
-import { Tabs } from 'antd';
-import { useSelector } from 'react-redux';
-import QuestionsList from '../shared/QuestionsList.jsx';
+import { Tabs } from "antd";
+import { useSelector } from "react-redux";
+import { useTranslation } from "react-i18next";
+import QuestionsList from "../shared/QuestionsList.jsx";
 
 export default function DashboardPage() {
+  const { t } = useTranslation();
   const { questions, users } = useSelector((state) => state.polls);
   const authedUser = useSelector((state) => state.session.authedUser);
-  const all = Object.values(questions).sort((a, b) => b.timestamp - a.timestamp);
+  const all = Object.values(questions).sort(
+    (a, b) => b.timestamp - a.timestamp,
+  );
   const answered = all.filter((q) => users[authedUser].answers[q.id]);
   const unanswered = all.filter((q) => !users[authedUser].answers[q.id]);
-  return <Tabs defaultActiveKey="unanswered"
-               items={
-      [
-          { key: 'unanswered', label: 'Unanswered', children: <QuestionsList title="Questions to answer" questions={unanswered} users={users} /> }
-          ,{ key: 'answered', label: 'Answered', children: <QuestionsList title="Completed questions" questions={answered} users={users} answered />
-      }
-      ]} />;
+  return (
+    <Tabs
+      defaultActiveKey="unanswered"
+      items={[
+        {
+          key: "unanswered",
+          label: t("questions.unanswered"),
+          children: (
+            <QuestionsList
+              title={t("questions.unanswered")}
+              questions={unanswered}
+              users={users}
+            />
+          ),
+        },
+        {
+          key: "answered",
+          label: t("questions.answered"),
+          children: (
+            <QuestionsList
+              title={t("questions.answered")}
+              questions={answered}
+              users={users}
+              answered={true}
+            />
+          ),
+        },
+      ]}
+    />
+  );
 }
