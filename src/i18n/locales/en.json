@@ -23,7 +23,8 @@
     "optionOne": "Option One",
     "optionTwo": "Option Two",
     "submit": "Submit",
-    "created": "Created"
+    "created": "Created",
+    "createPoll": "Create Poll"
   },
   "dashboard": {
     "title": "Dashboard",

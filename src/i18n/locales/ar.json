@@ -23,7 +23,8 @@
     "optionOne": "الخيار الأول",
     "optionTwo": "الخيار الثاني",
     "submit": "إرسال",
-    "created": "تم الإنشاء"
+    "created": "تم الإنشاء",
+    "createPoll": "إنشاء استطلاع"
   },
   "dashboard": {
     "title": "لوحة المعلومات",
