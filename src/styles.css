@@ -1,0 +1,20 @@
+body { margin: 0; background: #f5f7fb; }
+
+:root[data-theme="dark"] body {
+  background: #141414;
+}
+
+.app-shell { min-height: 100vh; }
+.header { display: flex; align-items: center; gap: 24px; padding-inline: 24px; }
+.brand { color: white !important; margin: 0 !important; white-space: nowrap; }
+.nav-menu { flex: 1; min-width: 0; }
+.header-user { color: white; }
+.app-content { width: min(100%, 980px); margin: 32px auto; padding: 0 16px; }
+.footer { text-align: center; }
+.login-page { min-height: 70vh; display: grid; place-items: center; padding: 24px; }
+.login-card { width: min(100%, 420px); text-align: center; }
+.user-select, .full-width { width: 100%; }
+.section-card { box-shadow: 0 8px 24px rgba(0,0,0,.06); }
+.center { min-height: 50vh; display: grid; place-items: center; }
+.mt { margin-top: 16px; }
+@media (max-width: 760px) { .header { height: auto; flex-wrap: wrap; padding: 12px; } .nav-menu { order: 3; width: 100%; } }

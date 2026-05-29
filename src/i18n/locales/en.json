@@ -1,0 +1,33 @@
+{
+  "common": {
+    "dashboard": "Dashboard",
+    "newPoll": "New Poll",
+    "leaderboard": "Leaderboard",
+    "logout": "Logout",
+    "login": "Login",
+    "username": "Username",
+    "password": "Password",
+    "lightMode": "Light Mode",
+    "darkMode": "Dark Mode"
+  },
+  "leaderboard": {
+    "title": "Leaderboard",
+    "user": "User",
+    "answered": "Answered",
+    "created": "Created",
+    "score": "Score"
+  },
+  "poll": {
+    "title": "Poll",
+    "addNew": "Add New Poll",
+    "optionOne": "Option One",
+    "optionTwo": "Option Two",
+    "submit": "Submit",
+    "created": "Created"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "answered": "Answered Questions",
+    "unanswered": "Unanswered Questions"
+  }
+}
