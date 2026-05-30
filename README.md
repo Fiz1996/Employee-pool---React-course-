@@ -1,4 +1,4 @@
-# Employee Polls
+# Polls
 
 An interactive polling application that allows employees to create, answer, and view poll results in real-time. Built with Vite and React for a fast, modern user experience.
 
